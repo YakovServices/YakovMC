@@ -12,12 +12,13 @@ Para utilizar YakovMC, simplemente ejecuta el siguiente comando en tu terminal (
 
 ¿Qué hace este comando?:
 
-Este comando inicializa YakovMC en modo terminal. Al ejecutarlo, tendrás qué seguir los pasos que te proporcionará la herramienta YakovMC. Esto permite recopilar datos pero no va a podera acceder a la red, sirve para robar los datos de autenticación.
+Este comando inicializa YakovMC en modo terminal. Al ejecutarlo, tendrás qué seguir los pasos que te proporcionará la herramienta YakovMC. Esto hara que puedas robar datos de autenticación.
 Requisitos:
 
-Usar una terminal en el modo "root".
-Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida. También es recomendable tener instalado php, dnsmasq y hostapd para ejecutar el script correctamente.
-Ejemplo de uso
+1.Tener los programas php, dnsmasq y hostapd instalados.
+2.Usar una terminal en el modo "root".
+3.Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida. También es recomendable tener instalado php, dnsmasq y hostapd para ejecutar el script correctamente.
+Ejemplo de uso:
 
 Abre una terminal (root) en tu sistema.
 Navega al directorio YakovMC, ejecutando el siguiente comando en tu terminal (root):
