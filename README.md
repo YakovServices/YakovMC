@@ -2,7 +2,7 @@
 
 YakovMC es una herramienta diseñada para crear redes WiFi de manera sencilla y efectiva. Al utilizar esta herramienta, podrás establecer un punto de acceso que requiere a los usuarios ingresar su correo electrónico (Gmail, Yahoo, etc.) para conectarse a la red, similar a lo que hace EvilTrust.
 
-## Uso
+# Uso:
 
 Para utilizar YakovMC, simplemente ejecuta el siguiente comando en tu terminal (root):
 
