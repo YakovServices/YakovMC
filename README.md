@@ -1,6 +1,6 @@
 # YakovMC
 
-![Descripción de la imagen](/home/yakov/Downloads/YakovMC.png)
+![Imagen YakovMC](https://imgur.com/a/5uPZ41v)
 
 
 
