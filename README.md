@@ -64,10 +64,14 @@ Ejecutar estos 3 comandos en tu terminal (root) y después seguir los pasos:
 
 
     git clone https://github.com/YakovServices/YakovMC.git
-,
+    
+también
 
     cd YakovMC
 
 y
 
     ./YakovMC.sh -m terminal
+
+
+¡Hecho con fines educativos!
