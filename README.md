@@ -36,11 +36,16 @@ Ahora mira el panel de ayuda ejecutando el siguiente comando en tu terminal (roo
 
     ./YakovMC.sh -h
 
-¿Qué hace este comando?:
+¿Qué hace este comando?:}
+
 Mostrar el panel de ayuda.
 
 
 
+Y para empeza la ciberseguridad ejecuta el siguiente comando en tu terminal (root):
+
+
+    ./YakovMC.sh -m terminal
 
 
 Disfruta de las funcionalidades de YakovMC y asegúrate de usarla de manera responsable.
