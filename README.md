@@ -26,9 +26,11 @@ Navegando al siguiente directorio al directorio (root):
     cd YakovMC
 
 Ejecuta el comando anterior.
+Luego ejecuta el siguiente comando (root):
 
+    chmod +x YakovMC.sh
 
-Puedes ver el panel de ayuda ejecutando el siguiente comando en tu terminal (root):
+Ahora mira el panel de ayuda ejecutando el siguiente comando en tu terminal (root):
 
   (bash)
 
