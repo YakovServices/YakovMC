@@ -4,20 +4,20 @@ YakovMC es una herramienta diseñada para crear redes WiFi de manera sencilla y 
 
 # Uso:
 
-Para utilizar YakovMC, simplemente ejecuta el siguiente comando en tu terminal (root):
+Para utilizar YakovMC, simplemente ejecuta los siguientes comandos en tu terminal (root):
 
   (bash)
-  
-    ./YakovMC.sh -m terminal
+
+    git clone https://github.com/YakovServices/YakovMC
 
 ¿Qué hace este comando?:
 
-Este comando inicializa YakovMC en modo terminal. Al ejecutarlo, tendrás qué seguir los pasos que te proporcionará la herramienta YakovMC. Esto hara que puedas robar datos de autenticación.
+Este comando clona el repositorio de la herramienta YakovMC.
 Requisitos:
 
 1.Tener los programas php, dnsmasq y hostapd instalados.
 2.Usar una terminal en el modo "root".
-3.Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida. También es recomendable tener instalado php, dnsmasq y hostapd para ejecutar el script correctamente.
+3.Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida.
 Ejemplo de uso:
 
 Abre una terminal (root) en tu sistema.
@@ -42,12 +42,6 @@ Mostrar el panel de ayuda.
 
 
 Disfruta de las funcionalidades de YakovMC y asegúrate de usarla de manera responsable.
-
-
-
-
-
-
 
 
 
