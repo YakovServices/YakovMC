@@ -20,7 +20,7 @@ Requisitos:
 3.Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida.
 Ejemplo de uso:
 
-Abre una terminal (root) en tu sistema.
+Ahora ejecuta este comando siendo (root).
 Navega al directorio YakovMC, ejecutando el siguiente comando en tu terminal (root):
 
     cd YakovMC
