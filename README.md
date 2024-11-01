@@ -21,7 +21,7 @@ Requisitos:
 Ejemplo de uso:
 
 Ahora ejecuta este comando siendo (root).
-Navega al directorio YakovMC, ejecutando el siguiente comando en tu terminal (root):
+Navegando al siguiente directorio al directorio (root):
 
     cd YakovMC
 
