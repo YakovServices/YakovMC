@@ -17,8 +17,11 @@ Este comando clona el repositorio de la herramienta YakovMC.
 Requisitos:
 
 1.Tener los programas php, dnsmasq y hostapd instalados.
+
 2.Usar una terminal en el modo "root".
+
 3.Asegúrate de tener los permisos necesarios y estar en un entorno donde la creación de redes WiFi sea permitida.
+
 Ejemplo de uso:
 
 Ahora ejecuta este comando siendo (root).
