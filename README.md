@@ -4,7 +4,7 @@ YakovMC es una herramienta diseñada para crear redes WiFi de manera sencilla y 
 
 # Uso:
 
-Para utilizar YakovMC, simplemente ejecuta los siguientes comandos en tu terminal (root):
+Para utilizar YakovMC, simplemente ejecuta el siguiente comando en tu terminal (root):
 
   (bash)
 
