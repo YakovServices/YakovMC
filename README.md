@@ -24,23 +24,26 @@ Requisitos:
 
 Ejemplo de uso:
 
-Ahora ejecuta este comando siendo (root).
+Primero ejecuta el comando anterior (root):
+
+    git clone https://github.com/YakovServices/YakovMC
+
+Luego ejecuta este comando siendo (root).
 Navegando al siguiente directorio al directorio (root):
 
     cd YakovMC
-
-Ejecuta el comando anterior.
-Luego ejecuta el siguiente comando (root):
+    
+Después ejecuta el siguiente comando (root):
 
     chmod +x YakovMC.sh
 
-Ahora mira el panel de ayuda ejecutando el siguiente comando en tu terminal (root):
+Ahora puedes mirar el panel de ayuda ejecutando el siguiente comando en tu terminal (root):
 
   (bash)
 
     ./YakovMC.sh -h
 
-¿Qué hace este comando?:}
+¿Qué hace este comando?:
 
 Mostrar el panel de ayuda.
 
@@ -50,6 +53,14 @@ Y para empeza la ciberseguridad ejecuta el siguiente comando en tu terminal (roo
 
 
     ./YakovMC.sh -m terminal
+
+Y luego sigue los pasos que te mostrará.
+
+
+
+
+
+
 
 
 Disfruta de las funcionalidades de YakovMC y asegúrate de usarla de manera responsable.
@@ -69,11 +80,21 @@ Ejecutar estos 3 comandos en tu terminal (root) y después seguir los pasos que 
     
 también
 
+(bash)
+
     cd YakovMC
 
 y
+
+(bash)
 
     ./YakovMC.sh -m terminal
 
 
 (Hecho con fines educativos)
+
+
+
+
+
+Cada usuario es responsable del uso de este programa de ciberseguridad. Ha sido desarrollado y publicado exclusivamente para fines educativos. Me deslindo de cualquier responsabilidad si es usado con otros fines. 
