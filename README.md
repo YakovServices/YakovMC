@@ -13,6 +13,7 @@ Para utilizar YakovMC, simplemente ejecuta el siguiente comando en tu terminal (
 ¿Qué hace este comando?:
 
 Este comando clona el repositorio de la herramienta YakovMC.
+
 Requisitos:
 
 1.Tener los programas php, dnsmasq y hostapd instalados.
