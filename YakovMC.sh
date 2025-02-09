@@ -29,11 +29,11 @@ function ctrl_c(){
 function banner(){
 echo -e "\n${redColour}  __   __    _           __  __  ___ "
 	sleep 0.05
-	echo -e " /  ___|| |            | |"
+	echo -e " \ \ / /_ _| |_______ _|  \/  |/ __|"
 	sleep 0.05
-	echo -e "    _____  _              _ "
+	echo -e "   \ V / _ | / / _ \ V / |\/| | (__ "
 	sleep 0.05
-	echo -e "   \ `--. | |  __ _  ___ | |__${endColour}${yellowColour}${endColour}${blueColour}Slash.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
+	echo -e "   |_|\__,_|_\_\___/\_/|_|  |_|\___|${endColour}${yellowColour}${endColour}${blueColour}Slash.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
 }
 
 function dependencies(){
